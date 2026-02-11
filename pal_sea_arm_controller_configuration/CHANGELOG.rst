@@ -15,6 +15,26 @@ Changelog for package pal_sea_arm_controller_configuration
 * Restructure launch files
 * Contributors: David ter Kuile, Noel Jimenez, davidterkuile
 
+1.23.2 (2026-02-10)
+-------------------
+
+1.23.1 (2026-02-03)
+-------------------
+
+1.23.0 (2026-02-02)
+-------------------
+* fix pipeline
+* add root_link instead of torso_lift_link to adapt teleop station
+* Contributors: ileniaperrella
+
+1.22.1 (2026-01-08)
+-------------------
+* Add "Hardware Components Activity" module dependency
+* Contributors: Noel Jimenez
+
+1.22.0 (2025-12-05)
+-------------------
+
 1.21.0 (2025-10-29)
 -------------------
 * Merge branch 'tpe/add_open_loop' into 'humble-devel'
