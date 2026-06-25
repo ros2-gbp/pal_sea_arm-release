@@ -7,8 +7,6 @@ ${ARM_SIDE_PREFIX}_controller:
       - ${ARM_SIDE_PREFIX}_3_joint
       - ${ARM_SIDE_PREFIX}_4_joint
       - ${ARM_SIDE_PREFIX}_5_joint
-      - ${ARM_SIDE_PREFIX}_6_joint
-      - ${ARM_SIDE_PREFIX}_7_joint
     command_interfaces:
       - position
     state_interfaces:
@@ -45,7 +43,6 @@ ${ARM_SIDE_PREFIX}_controller:
         d: 0.0
 
     interpolate_from_desired_state: true
-
     constraints:
       goal_time: 0.6
       stopped_velocity_tolerance: 5.0
@@ -58,8 +55,4 @@ ${ARM_SIDE_PREFIX}_controller:
       ${ARM_SIDE_PREFIX}_4_joint:
         goal: 0.02
       ${ARM_SIDE_PREFIX}_5_joint:
-        goal: 0.02
-      ${ARM_SIDE_PREFIX}_6_joint:
-        goal: 0.02
-      ${ARM_SIDE_PREFIX}_7_joint:
         goal: 0.02
