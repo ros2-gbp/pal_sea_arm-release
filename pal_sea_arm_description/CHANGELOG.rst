@@ -23,6 +23,111 @@ Changelog for package pal_sea_arm_description
 * Add arm model check in urdf
 * Contributors: David ter Kuile, Noel Jimenez, davidterkuile
 
+2.6.0 (2026-06-25)
+------------------
+* Add condition for 4dof arm without ee
+* Change fakeforearm to 4dof without end effector
+* Removing incorrect tool offset in 5dof
+* Contributors: Aina, Óscar Martínez
+
+2.5.1 (2026-06-17)
+------------------
+* Match axis with ROS 1 version
+* Contributors: Aina
+
+2.5.0 (2026-06-04)
+------------------
+
+2.4.1 (2026-05-29)
+------------------
+* Fix axis
+* Contributors: Aina
+
+2.4.0 (2026-05-20)
+------------------
+* Update end_effector_camera.urdf.xacro
+* Contributors: martinaannicelli
+
+2.3.1 (2026-05-12)
+------------------
+* reduce 7 limit for spherical and straight wrist
+* reduce limit 7 TP spherical
+* Reducing arm_7 upper/lower bound
+* Contributors: ileniaperrella
+
+2.3.0 (2026-05-12)
+------------------
+* Fix rotation direction
+* Remove unused meshes
+* Link 5 short wrist with the tiago pro one
+* Merge spherical wrist with the tiago pro one
+* Contributors: Aina
+
+2.2.1 (2026-04-29)
+------------------
+* change values limits joint6
+* Contributors: susannamastromauro
+
+2.2.0 (2026-04-28)
+------------------
+* tmp remove dependency
+* Split end effectors into sides
+* Add kangaroo arms
+* Contributors: Aina
+
+2.1.1 (2026-04-16)
+------------------
+* Add error_protection and idle_mode_on_stop parameters to true
+* Contributors: Noel Jimenez
+
+2.1.0 (2026-04-15)
+------------------
+* Add arguments to support the new gazebo
+* Contributors: thomas.peyrucain
+
+2.0.1 (2026-04-10)
+------------------
+
+2.0.0 (2026-03-31)
+------------------
+* delete comment
+* fix property joint_type
+* set 3th and 5th as infinite joints
+* fix collision arm 6th and 7th
+* fix 6th link standalone
+* add 7th link collision
+* delete comment
+* remove use_sim_time
+* delete whitespace
+* add 5th joint in short and straight wrist properties
+* Fix spherical wrist properties and origins
+* fix 1st joint
+* fix 7th joint
+* Fix rotate axe for joint 6
+* Fix module
+* adding limit j1
+* change limits j3
+* fix z\_ value of base_link
+* fix limits j1 and j3
+* add continuous joint and remove camera param
+* remove camera parameter from yaml file
+* include arm_7_link collision
+* update arm-standalone
+* fix simulation and 7-link-mesh
+* Contributors: Aina, susannamastromauro
+
+1.25.0 (2026-03-18)
+-------------------
+* Add missing limits_v2 for the arm_5_joint when using short-wrist
+* Add support for short-wrist
+* Contributors: Noel Jimenez
+
+1.24.0 (2026-02-18)
+-------------------
+* Add new limits values
+* Add limits_v2
+* Contributors: Aina
+
 1.23.2 (2026-02-10)
 -------------------
 * adding calibration_tool param
