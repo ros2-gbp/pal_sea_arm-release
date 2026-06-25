@@ -35,6 +35,7 @@ class LaunchArguments(LaunchArgumentsBase):
     torque_estimation: DeclareLaunchArgument = SEAArmArgs.torque_estimation
     use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
     namespace: DeclareLaunchArgument = CommonArgs.namespace
+    wrist_model: DeclareLaunchArgument = SEAArmArgs.wrist_model
 
 
 def declare_actions(launch_description: LaunchDescription, launch_args: LaunchArguments):
@@ -67,7 +68,9 @@ def declare_actions(launch_description: LaunchDescription, launch_args: LaunchAr
     sea_state_broadcaster = include_scoped_launch_py_description(
         pkg_name='pal_sea_arm_controller_configuration',
         paths=['launch', 'sea_state_broadcaster_controller.launch.py'],
-        launch_arguments={'side': 'arm'})
+        launch_arguments={'side': ''},
+        condition=IfCondition(LaunchConfiguration("torque_estimation"))
+    )
 
     launch_description.add_action(sea_state_broadcaster)
 
@@ -77,14 +80,26 @@ def declare_actions(launch_description: LaunchDescription, launch_args: LaunchAr
 
     launch_description.add_action(arm_controller)
 
+    gravity_compensation_controller_effort = include_scoped_launch_py_description(
+        pkg_name='pal_sea_arm_controller_configuration',
+        paths=['launch', 'gravity_compensation_controller.launch.py'],
+        launch_arguments={"side": '',
+                          "root_link": 'arm_root_link',
+                          "wrist_model": LaunchConfiguration('wrist_model')
+                          })
+
+    launch_description.add_action(gravity_compensation_controller_effort)
+
     ft_sensor_controller = include_scoped_launch_py_description(
         pkg_name=pkg_name,
         paths=['launch', 'ft_sensor_controller.launch.py'],
+        launch_arguments={"ft_sensor": LaunchConfiguration('ft_sensor')},
         condition=LaunchConfigurationNotEquals('ft_sensor', 'no-ft-sensor'))
 
     launch_description.add_action(ft_sensor_controller)
 
-    launch_description.add_action(OpaqueFunction(function=configure_end_effector_controller))
+    launch_description.add_action(OpaqueFunction(
+        function=configure_end_effector_controller))
 
     return
 
