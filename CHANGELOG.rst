@@ -11,6 +11,74 @@ Changelog for package pal_sea_arm_bringup
 * Restructure launch files pal-sea-arm-bringup
 * Contributors: David ter Kuile, davidterkuile
 
+2.6.0 (2026-06-25)
+------------------
+
+2.5.1 (2026-06-17)
+------------------
+
+2.5.0 (2026-06-04)
+------------------
+
+2.4.1 (2026-05-29)
+------------------
+
+2.4.0 (2026-05-20)
+------------------
+
+2.3.1 (2026-05-12)
+------------------
+
+2.3.0 (2026-05-12)
+------------------
+* fix name launch-file
+* Contributors: susannamastromauro
+
+2.2.1 (2026-04-29)
+------------------
+* update motions
+* remove module from CMakeList
+* adding params for playmotion
+* delete file yaml
+* fix errors
+* Contributors: susannamastromauro
+
+2.2.0 (2026-04-28)
+------------------
+
+2.1.1 (2026-04-16)
+------------------
+
+2.1.0 (2026-04-15)
+------------------
+* Add arguments to support the new gazebo
+* Contributors: thomas.peyrucain
+
+2.0.1 (2026-04-10)
+------------------
+* fix typo
+* Contributors: ileniaperrella
+
+2.0.0 (2026-03-31)
+------------------
+* Add play_motion2 module
+* delete import not used
+* delete not necessary params
+* fix path arm_standalone_motions.yaml
+* fix playmotion2
+* delete directory
+* remove camera parameter
+* remove tuck_arm node
+* Delete unused imports in launch files
+* update arm-standalone
+* Contributors: Aina, susannamastromauro
+
+1.25.0 (2026-03-18)
+-------------------
+
+1.24.0 (2026-02-18)
+-------------------
+
 1.23.2 (2026-02-10)
 -------------------
 
