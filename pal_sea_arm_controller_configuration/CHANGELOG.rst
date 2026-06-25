@@ -15,6 +15,68 @@ Changelog for package pal_sea_arm_controller_configuration
 * Restructure launch files
 * Contributors: David ter Kuile, Noel Jimenez, davidterkuile
 
+2.6.0 (2026-06-25)
+------------------
+
+2.5.1 (2026-06-17)
+------------------
+
+2.5.0 (2026-06-04)
+------------------
+* Change is_ankle to location to better scalability
+* Add dynamic prefix to handle ankle ft
+* Contributors: Aina
+
+2.4.1 (2026-05-29)
+------------------
+
+2.4.0 (2026-05-20)
+------------------
+
+2.3.1 (2026-05-12)
+------------------
+
+2.3.0 (2026-05-12)
+------------------
+
+2.2.1 (2026-04-29)
+------------------
+* add launch_argument ft_sensor
+* fix errors
+* Contributors: susannamastromauro
+
+2.2.0 (2026-04-28)
+------------------
+
+2.1.1 (2026-04-16)
+------------------
+
+2.1.0 (2026-04-15)
+------------------
+
+2.0.1 (2026-04-10)
+------------------
+* Fixing open loop param
+* adding depend gravity_compensation_controller2
+* adding check side for standalone
+* adding gravity_compensation_controller_effort
+* Contributors: susannamastromauro, vivianamorlando
+
+2.0.0 (2026-03-31)
+------------------
+* add torque_estimation condition
+* fix simulation and 7-link-mesh
+* Contributors: susannamastromauro
+
+1.25.0 (2026-03-18)
+-------------------
+* Raise on incompatibility of short-wrist and torque mode
+* Add support for short-wrist
+* Contributors: Noel Jimenez
+
+1.24.0 (2026-02-18)
+-------------------
+
 1.23.2 (2026-02-10)
 -------------------
 
