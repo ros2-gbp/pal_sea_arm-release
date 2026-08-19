@@ -15,6 +15,45 @@ Changelog for package pal_sea_arm_controller_configuration
 * Restructure launch files
 * Contributors: David ter Kuile, Noel Jimenez, davidterkuile
 
+2.8.4 (2026-08-04)
+------------------
+
+2.8.3 (2026-07-30)
+------------------
+
+2.8.2 (2026-07-20)
+------------------
+* Add prefix argument and change value for no side
+* Add no controller when ee is pen-gripper
+* Contributors: Aina
+
+2.8.1 (2026-07-06)
+------------------
+* Merge branch 'change/publish_rate/ft_broadcaster' into 'humble-devel'
+  Set the publish rate of the force-torque broadcasters to 100 Hz
+  See merge request robots/pal_sea_arm!141
+* Set the publish rate of the force-torque broadcasters to 100 Hz
+* Contributors: Sai Kishor Kothakota
+
+2.8.0 (2026-07-03)
+------------------
+* Merge branch 'use/ft_broadcaster' into 'humble-devel'
+  Use ft broadcaster instead of ft_controller
+  See merge request robots/pal_sea_arm!140
+* Deprecate ft_sensor_controller launch configuration
+* Add FT Sensor Broadcaster configuration
+* Contributors: Sai Kishor Kothakota
+
+2.7.0 (2026-07-02)
+------------------
+* Merge branch 'feat/add_input_broadcaster' into 'humble-devel'
+  Add input broadcaster by default
+  See merge request robots/pal_sea_arm!138
+* Add alum condition for dependency
+* Fix side
+* Add input broadcaster by default
+* Contributors: Aina, Aina Irisarri
+
 2.6.0 (2026-06-25)
 ------------------
 
