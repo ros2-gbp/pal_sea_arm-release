@@ -90,6 +90,15 @@ def declare_actions(launch_description: LaunchDescription, launch_args: LaunchAr
 
     launch_description.add_action(gravity_compensation_controller_effort)
 
+    input_state_broadcaster = include_scoped_launch_py_description(
+        pkg_name='input_state_broadcaster',
+        paths=['launch', 'input_state_broadcaster.launch.py'],
+        launch_arguments={"side": '',
+                          "prefix": ''},
+    )
+
+    launch_description.add_action(input_state_broadcaster)
+
     ft_sensor_controller = include_scoped_launch_py_description(
         pkg_name=pkg_name,
         paths=['launch', 'ft_sensor_controller.launch.py'],
@@ -109,7 +118,7 @@ def configure_end_effector_controller(context, *args, **kwargs):
     end_effector = read_launch_argument('end_effector', context)
     end_effector_underscore = end_effector.replace('-', '_')
 
-    if end_effector != "no-end-effector":
+    if end_effector not in ["no-end-effector", "pen-gripper"]:
         ee_pkg_name = f'{end_effector_underscore}_controller_configuration'
         ee_launch_file = f'{end_effector_underscore}_controller.launch.py'
 

@@ -23,6 +23,42 @@ Changelog for package pal_sea_arm_description
 * Add arm model check in urdf
 * Contributors: David ter Kuile, Noel Jimenez, davidterkuile
 
+2.8.4 (2026-08-04)
+------------------
+* Adding missing rh8d description dep
+* Contributors: oscarmartinez
+
+2.8.3 (2026-07-30)
+------------------
+* Proper launch of the RH8D hand
+  Removes the mimic flag and properly loads the topic based system (used
+  for the HW hand)
+* Contributors: Óscar Martínez
+
+2.8.2 (2026-07-20)
+------------------
+* add pen-gripper as ee
+* Contributors: susannamastromauro
+
+2.8.1 (2026-07-06)
+------------------
+
+2.8.0 (2026-07-03)
+------------------
+
+2.7.0 (2026-07-02)
+------------------
+* Merge branch 'fix_arm_4_inertia' into 'humble-devel'
+  Fix inertia rotation of arm 4 link
+  See merge request robots/pal_sea_arm!139
+* Arm link 4 : use same inertia origin as old fake-forearm link
+* Remove rotation from arm link 4 inertia
+* Merge branch 'rm/fake_forearm' into 'humble-devel'
+  Remove fake_forearm end effector
+  See merge request robots/pal_sea_arm!137
+* Remove fake_forearm end effector
+* Contributors: Aina, Aina Irisarri, Pierre Fernbach, Sai Kishor Kothakota
+
 2.6.0 (2026-06-25)
 ------------------
 * Add condition for 4dof arm without ee
