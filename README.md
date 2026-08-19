@@ -1,3 +1,30 @@
+## pal_sea_arm (humble) - 2.8.4-1
+
+The packages in the `pal_sea_arm` repository were released into the `humble` distro by running `/usr/bin/bloom-release --track humble --rosdistro humble pal_sea_arm -y` on `Wed, 19 Aug 2026 06:33:23 -0000`
+
+These packages were released:
+- `pal_sea_arm`
+- `pal_sea_arm_bringup`
+- `pal_sea_arm_controller_configuration`
+- `pal_sea_arm_description`
+
+Version of package(s) in repository `pal_sea_arm`:
+
+- upstream repository: https://github.com/pal-robotics/pal_sea_arm.git
+- release repository: https://github.com/ros2-gbp/pal_sea_arm-release.git
+- rosdistro version: `2.6.0-1`
+- old version: `2.6.0-1`
+- new version: `2.8.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## pal_sea_arm (humble) - 2.6.0-1
 
 The packages in the `pal_sea_arm` repository were released into the `humble` distro by running `/usr/bin/bloom-release --track humble --rosdistro humble -y pal_sea_arm` on `Thu, 25 Jun 2026 09:51:18 -0000`
